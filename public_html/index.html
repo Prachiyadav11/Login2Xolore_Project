@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Enrollment Form</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 30px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 8px;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 15px;
+      margin: 5px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Student Enrollment Form</h2>
+  <form id="studentForm">
+    <label>Roll No: <input type="text" id="rollNo" required></label>
+    <label>Full Name: <input type="text" id="fullName" disabled></label>
+    <label>Class: <input type="text" id="studentClass" disabled></label>
+    <label>Birth Date: <input type="date" id="birthDate" disabled></label>
+    <label>Address: <input type="text" id="address" disabled></label>
+    <label>Enrollment Date: <input type="date" id="enrollDate" disabled></label>
+
+    <br>
+    <button type="button" id="saveBtn" disabled>Save</button>
+    <button type="button" id="updateBtn" disabled>Update</button>
+    <button type="button" id="resetBtn" disabled>Reset</button>
+  </form>
+</body>
+</html>
